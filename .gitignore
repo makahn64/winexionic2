@@ -1,3 +1,29 @@
-.DS_Store
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
 node_modules/
-.vscode/
+platforms/
+#plugins/
+
+
+# IntelliJ project files
+.idea
+*.iml
+
+node_modules
+.tmp
+.sass-cache
+**/bower_components
+www/lib
+platforms
+*.swp
+*.swo
+*.log
+*.DS_Store
+
+# Visual Studio Code files
+.vscode.
+\.vscode/
+jsconfig.json
+
+typings/
