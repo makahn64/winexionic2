@@ -1,0 +1,102 @@
+<!--<ion-view title="Details" id="page3">
+
+    <ion-content padding="true" class="has-header">
+        <div class="button-bar">
+            <a class="button"><i class="icon ion-map"></i></a>
+            <a class="button"><i class="icon ion-android-car"></i></a>
+            <a class="button"><i class="icon ion-android-call"></i></a>
+            <a class="button"><i class="icon ion-android-cloud-circle"></i></a>
+        </div>
+        <div class="list card">
+            <ion-item>
+                <h2>{{ venue.name }}</h2></ion-item>
+            <div class="venue-img-holder">
+                <img class="venue-imgs" src="img/vineyard-oil.jpg"/>
+                <img class="venue-logo" [src]="http://192.241.228.100:1338/media/download/{{ venue.logoId }}"/>
+            </div>
+
+             At a Glance 
+            <ion-item class="item item-body">
+                <h3>At a Glance</h3>
+                <p>Hours Today: {{ hoursToday }}</p>
+                <p>Wine Types: <span class="pill {{ wt }}" ng-repeat="wt in venue.wineTypes.broadTypes">{{ wt }}</span>
+                <span ng-if="!venue.wineTypes.broadTypes.length">Unknown, please call venue.</span></p>
+                <p>Tasting Fee: {{  fees }}</p>
+            </ion-item>
+
+             description 
+            <div class="item item-body" id="details-list-item-container1">
+                <h3>Description</h3>
+                <div ng-class="showDesc ? 'item-expand active' : 'item-expand inactive'">
+                    <p>{{ venue.description }}</p>
+                </div>
+                <div ng-click="showDesc = !showDesc" class="item-expand-footer">
+                    <i ng-class="showDesc ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
+                    {{ showDesc ? 'Less' : 'More' }}
+                </div>
+
+            </div>
+
+             Venue Info 
+            <ion-item class="item item-body">
+                <h3>Venue</h3>
+                <p style="text-transform: capitalize;">
+                    Type: {{ venue.facilityType }}
+                </p>
+                <p style="text-transform: capitalize;">Atmosphere: {{ venue.atmosphere }}</p>
+                <p>Features: <span class="pill" ng-repeat="f in venue.features" ng-if="venue.features.length>0">{{ f }}</span>
+                <span ng-if="venue.features.length==0">No info in database :(</span></p>
+            </ion-item>
+
+
+            <ion-item class="item item-body">
+                <h3>Wine Varietals and Styles</h3>
+                <p><span class="pill {{ wt }}" ng-repeat="wt in venue.wineTypes.varietals">{{ wt }}</span>
+                    <span class="pill {{ wt }}" ng-repeat="wt in venue.wineTypes.broadTypes">{{ wt }}</span>
+                    <span ng-if="!venue.wineTypes.broadTypes.length">Unknown, please call venue.</span>
+                </p>
+            </ion-item>
+
+            <ion-item class="item item-body">
+                <h3>Contact Info</h3>
+                <p><span>{{ venue.address.street }}<br>{{ venue.address.city }}, {{ venue.address.state }}</span></p>
+                <p>Phone: {{ venue.phone.main }}</p>
+                <p>Website: <a href="{{ venue.eContact.website }}">{{ venue.eContact.website }}</a></p>
+                <p>Email: <a href="mailto:{{ venue.eContact.email }}">{{ venue.eContact.email }}</a></p>
+
+            </ion-item>
+
+        </div>
+    </ion-content>
+</ion-view>
+
+<script id="templates/details.popover.html" type="text/ng-template">
+    <ion-popover-view style="height: 430px;">
+        <ion-content>
+            <a class="item" href="http://ionicframework.com/docs/" target="_blank">
+                <span class="icon ion-heart" style="float: right;"></span> Mark Favorite
+            </a>
+            <a class="item" href="http://ionicframework.com/docs/" target="_blank">
+                <span class="icon ion-edit" style="float: right;"></span>Reviews
+            </a>
+            <a class="item" href="http://showcase.ionicframework.com/" target="_blank">
+                <span class="icon ion-cash" style="float: right;"></span>Deals
+            </a>
+            <a class="item" href="http://ionicframework.com/submit-issue/" target="_blank">
+                <span class="icon ion-alertionic serv" style="float: right;"></span>Submit an Issue
+            </a>
+            <a class="item" href="">
+                <span class="icon ion-map" style="float: right;"></span>Show on Map
+            </a>
+            <a class="item" href="">
+                <span class="icon ion-ios-navigate" style="float: right;"></span>Turn by Turn Nav
+            </a>
+            <a class="item" href="">
+                <span class="icon ion-android-phone-landscape" style="float: right;"></span>Call
+            </a>
+            <a class="item" href="">
+                <span class="icon ion-android-cloud-circle" style="float: right;"></span>Website
+            </a>
+        </ion-content>
+    </ion-popover-view>
+</script>-->

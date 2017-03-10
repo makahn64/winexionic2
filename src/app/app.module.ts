@@ -1,14 +1,20 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { Page1 } from '../components/page1/page1';
-import { Page2 } from '../components/page2/page2';
+import { MapViewComponent } from '../components/MapView/map-view.component';
+import { ListComponent } from '../components/List/list.component';
+import { DetailViewComponent } from '../components/DetailView/detail-view.component';
+import { FavoritesComponent } from '../components/Favorites/favorites.component';
+import { ToursComponent } from '../components/Tours/tours.component';
 
 @NgModule({
   declarations: [
     MyApp,
-    Page1,
-    Page2
+    MapViewComponent,
+    ListComponent,
+    DetailViewComponent,
+    FavoritesComponent,
+    ToursComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -16,8 +22,11 @@ import { Page2 } from '../components/page2/page2';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Page1,
-    Page2
+    MapViewComponent,
+    ListComponent,
+    DetailViewComponent,
+    FavoritesComponent,
+    ToursComponent
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

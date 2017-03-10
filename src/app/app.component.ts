@@ -2,8 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { Page1 } from '../components/page1/page1';
-import { Page2 } from '../components/page2/page2';
+import { MapViewComponent } from '../components/MapView/map-view.component';
+import { ListComponent } from '../components/List/list.component';
+import { ToursComponent } from '../components/Tours/tours.component';
+import { FavoritesComponent } from '../components/Favorites/favorites.component';
 
 
 @Component({
@@ -12,7 +14,7 @@ import { Page2 } from '../components/page2/page2';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = MapViewComponent;
 
   pages: Array<{title: string, icon: string, component: any}>;
 
@@ -22,14 +24,25 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { 
-        title: 'Page One',
+        title: 'Map',
         icon: '../assets/img/k3.png',
-        component: Page1
-       },
+        component: MapViewComponent
+      },
       { 
-        title: 'Page Two',
+        title: 'List',
         icon: '../assets/img/k3.png',
-        component: Page2 }
+        component: ListComponent 
+      },
+      {
+        title: "Favorites",
+        icon: '../assets/img/k3.png',
+        component: FavoritesComponent
+      },
+      {
+        title: "Tours",
+        icon: '../assets/img/k3.png',
+        component: ToursComponent
+      }
     ];
 
   }
