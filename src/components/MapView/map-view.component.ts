@@ -8,6 +8,8 @@ import { NavController } from 'ionic-angular';
 })
 export class MapViewComponent {
 
+  title = "Map";
+
   constructor(public navCtrl: NavController) {
     
   }

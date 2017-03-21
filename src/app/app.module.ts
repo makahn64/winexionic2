@@ -6,6 +6,7 @@ import { ListComponent } from '../components/List/list.component';
 import { DetailViewComponent } from '../components/DetailView/detail-view.component';
 import { FavoritesComponent } from '../components/Favorites/favorites.component';
 import { ToursComponent } from '../components/Tours/tours.component';
+import { WinexTypes } from "../components/WinexTypes/winex.components";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ToursComponent } from '../components/Tours/tours.component';
     ToursComponent
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    WinexTypes
   ],
   bootstrap: [IonicApp],
   entryComponents: [
