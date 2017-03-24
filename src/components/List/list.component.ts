@@ -17,5 +17,8 @@ export class ListComponent {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 }
