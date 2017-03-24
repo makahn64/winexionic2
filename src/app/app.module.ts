@@ -6,6 +6,7 @@ import { ListComponent } from '../components/List/list.component';
 import { DetailViewComponent } from '../components/DetailView/detail-view.component';
 import { FavoritesComponent } from '../components/Favorites/favorites.component';
 import { ToursComponent } from '../components/Tours/tours.component';
+import { HeaderBarComponent } from '../components/HeaderBar/headerbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ToursComponent } from '../components/Tours/tours.component';
     ListComponent,
     DetailViewComponent,
     FavoritesComponent,
-    ToursComponent
+    ToursComponent,
+    HeaderBarComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)

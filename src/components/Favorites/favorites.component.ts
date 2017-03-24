@@ -5,6 +5,9 @@ import { Component, OnInit } from '@angular/core';
 	templateUrl: 'favorites.component.html'
 })
 export class FavoritesComponent implements OnInit {
+	
+	title = "Favorites";
+	
 	constructor() { }
 
 	ngOnInit() { }
