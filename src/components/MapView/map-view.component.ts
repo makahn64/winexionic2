@@ -19,6 +19,7 @@ export class MapViewComponent {
     var test = 3;
     var test2 = 12;
     console.log(test + test2);
+    var addedLine = 12;
 
   }
 
