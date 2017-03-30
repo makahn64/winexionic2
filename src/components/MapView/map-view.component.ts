@@ -14,4 +14,12 @@ export class MapViewComponent {
     
   }
 
+  onClickTest(){
+
+    var test = 3;
+    var test2 = 12;
+    console.log(test + test2);
+
+  }
+
 }
