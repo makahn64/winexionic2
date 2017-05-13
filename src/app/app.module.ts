@@ -7,6 +7,7 @@ import { DetailViewComponent } from '../components/DetailView/detail-view.compon
 import { FavoritesComponent } from '../components/Favorites/favorites.component';
 import { ToursComponent } from '../components/Tours/tours.component';
 import { HeaderBarComponent } from '../components/HeaderBar/headerbar.component';
+import { CreateOrSignInComponent } from '../components/CreateOrSignIn/createorsignin.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderBarComponent } from '../components/HeaderBar/headerbar.component'
     DetailViewComponent,
     FavoritesComponent,
     ToursComponent,
-    HeaderBarComponent
+    HeaderBarComponent,
+    CreateOrSignInComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -28,7 +30,8 @@ import { HeaderBarComponent } from '../components/HeaderBar/headerbar.component'
     ListComponent,
     DetailViewComponent,
     FavoritesComponent,
-    ToursComponent
+    ToursComponent,
+    CreateOrSignInComponent
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

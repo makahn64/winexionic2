@@ -6,7 +6,7 @@ import { MapViewComponent } from '../components/MapView/map-view.component';
 import { ListComponent } from '../components/List/list.component';
 import { ToursComponent } from '../components/Tours/tours.component';
 import { FavoritesComponent } from '../components/Favorites/favorites.component';
-
+import { CreateOrSignInComponent } from '../components/CreateOrSignIn/createorsignin.component';
 
 @Component({
   templateUrl: 'app.html'
@@ -14,7 +14,7 @@ import { FavoritesComponent } from '../components/Favorites/favorites.component'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = MapViewComponent;
+  rootPage: any = CreateOrSignInComponent;
 
   pages: Array<{title: string, icon: string, component: any}>;
 
