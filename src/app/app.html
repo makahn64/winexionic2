@@ -7,7 +7,7 @@
 
   <ion-content>
     <ul class="side-list">
-      <li menuClose class="list-item" *ngFor="let p of pages" (click)="openPage(p)">
+      <li [ngClass]="{'disabled': !pastLoginScreen}" menuClose class="list-item" *ngFor="let p of pages" (click)="openPage(p)">
         <div class="list-item-contents">
           <h2 class="list-item-title">{{p.title}}</h2>
           <img [src]="p.icon" class="list-item-image">
